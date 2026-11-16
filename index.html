@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Boby Agent</title>
+<style>
+  :root { --bg: #ffffff; --fg: #1f2937; --muted: #6b7280; --link: #2563eb; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #111827; --fg: #e5e7eb; --muted: #9ca3af; --link: #60a5fa; } }
+  body { background: var(--bg); color: var(--fg); font: 17px/1.6 system-ui, sans-serif; margin: 0; padding: 0 16px; }
+  main { max-width: 680px; margin: 48px auto; }
+  h1 { margin-bottom: 4px; }
+  .tag { color: var(--muted); margin-top: 0; }
+  a { color: var(--link); }
+  footer { color: var(--muted); font-size: 14px; margin-top: 48px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Boby Agent</h1>
+  <p class="tag">A personal assistant, built as a learning project.</p>
+
+  <p>Boby Agent is a private, single-user assistant that runs on its owner's own computer.
+  Every morning it researches the latest technology news, writes a short podcast script,
+  reads it aloud with a local text-to-speech voice, and uploads the episode as a
+  <strong>private</strong> video to its owner's own YouTube channel, so it can be listened to on the go.</p>
+
+  <p>It is not a public service: nobody else can sign in to it, and it does not collect
+  data from anyone.</p>
+
+  <h2>How it uses Google</h2>
+  <p>Boby Agent uses the YouTube API Services with a single permission,
+  <code>youtube.upload</code>, which lets it upload videos to its owner's channel.
+  It cannot read, modify or delete existing videos.</p>
+
+  <p>Read the <a href="privacy.html">privacy policy</a>.</p>
+
+  <footer>Boby Agent is not affiliated with or endorsed by Google or YouTube.</footer>
+</main>
+</body>
+</html>
